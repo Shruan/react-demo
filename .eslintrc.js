@@ -35,7 +35,7 @@ module.exports = {
     "space-before-function-paren": ["error", "always"], // 方法参数的括号前加空格
     "semi": ["error", "never"], // 结尾不使用分号
     "comma-dangle": ["error", "never"], // 要求或禁止末尾逗号：不允许逗号
-    "linebreak-style": ["error", "windows"], // window环境
+    // "linebreak-style": ["error", "windows"], // window环境
     "react/forbid-prop-types": [0], // propTypes检查允许使用object array等
   }
 }
