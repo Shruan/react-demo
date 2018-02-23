@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom'
+// import { render } from 'react-dom'
+import Test from './subPage/test'
 
 class Hello extends Component {
-  render() {
+  render () {
+    const aaa = 'aaa111'
     return (
-      <div>111sss1</div>
+      <div>
+        1111
+        <Test title="aaa"/>
+        {aaa}
+      </div>
     );
   }
 }
