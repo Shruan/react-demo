@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 // import { render } from 'react-dom'
-import logo from './logo.svg';
+import logo from './logo.svg'
 
 class Header extends Component {
-  render() {
+  constructor (props) {
+    super(props)
+    this.state = {
+      title: 'Welcome to React'
+    }
+  }
+  render () {
     return (
       <div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">{this.state.title}</h1>
         </header>
         {
           <p className="App-intro">
@@ -20,4 +26,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Header
