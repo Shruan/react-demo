@@ -8,20 +8,37 @@ class Todo extends Component {
       list: []
     }
     this.onSubmitFuc = this.onSubmitFuc.bind(this)
+    this.deleteList = this.deleteList.bind(this)
   }
   onSubmitFuc (value) {
     this.setState({
-      list: this.state.list.concat(value)
+      list: this.state.list.concat({
+        label: value,
+        id: this.state.list.length
+      })
+    })
+  }
+  deleteList (id) {
+    this.setState({
+      list: this.state.list.filter(item => item.id !== id)
     })
   }
   render () {
     return (
       <div>
         <Input onSubmitFuc={this.onSubmitFuc} />
-        {
-          this.state.list.length === 0 ? '' :
-          this.state.list.map((item, index) => <p keys={index}>{item}</p>)
-        }
+        <ul>
+          {
+            this.state.list.length === 0 ? '' :
+            this.state.list.map((item) => (
+              <li
+                key={item.id}
+                onClick={this.deleteList.bind(this, item.id)}
+              >
+                {item.label}
+              </li>))
+          }
+        </ul>
       </div>
     )
   }
