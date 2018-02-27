@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+
 import App from '../App'
-import Home from '../containers/Home'
-import List from '../containers/List'
-import Detail from '../containers/Detail'
+
+import Home from '../pages/Home'
+import Hello from '../pages/Hello'
+import List from '../pages/List'
+import Detail from '../pages/Detail'
+import Todo from '../pages/Todo'
 
 
 class router extends Component {
@@ -15,6 +19,8 @@ class router extends Component {
             <Route path='list' component={List}></Route>
           </Route>
           <Route path='detail/:id' component={Detail}></Route>
+          <Route path='hello' component={Hello}></Route>
+          <Route path='todo' component={Todo}></Route>
         </Route>
       </Router>
     )

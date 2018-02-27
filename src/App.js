@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import Header from './components/Header'
-import Hello from './containers/Hello'
-import Todo from './containers/Todo'
-import Home from './containers/Home'
+import Menu from './components/Menu'
+import Home from './pages/Home'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Todo/>
+        <Menu/>
         <Header/>
         <div>{this.props.children}</div>
-        <Hello/>
       </div>
     );
   }
