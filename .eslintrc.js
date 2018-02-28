@@ -39,25 +39,25 @@ module.exports = {
     // "linebreak-style": ["error", "windows"], // window环境
     "linebreak-style": ["error", "unix"],
     "react/forbid-prop-types": [0], // propTypes检查允许使用object array等
-    "arrow-parens": [0],
+    "arrow-parens": [0],   // 箭头函数用小括号括起来
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/click-events-have-key-events": 0,
-    "no-empty": 0,
-    "no-unused-vars": 0,
+    "no-empty": 0,  // 块语句中的内容不能为空
+    "no-unused-vars": 0, // 不能有声明后未被使用的变量或参
     "no-console": 0,  // 无console
-    "no-const-assign": 2,
+    "no-const-assign": 2, // 禁止修改const声明的变量
     "no-dupe-class-members": 2,
-    "no-duplicate-case": 2,
-    "no-extra-parens": [2, "functions"],
-    "no-self-compare": 2,
-    "accessor-pairs": 2,
-    "constructor-super": 2,
+    "no-duplicate-case": 2, // switch中的case标签不能重复
+    "no-extra-parens": [2, "functions"],  // 禁止非必要的括号
+    "no-self-compare": 2, // 不能比较自身
+    "accessor-pairs": 2,  // 在对象中使用getter/setter
+    "constructor-super": 2,  // 非派生类不能调用super，派生类必须调用super
     "new-cap": [2, {"newIsCap": true, "capIsNew": false}],
-    "new-parens": 2,
-    "no-array-constructor": 2,
-    "no-class-assign": 2,
-    "no-cond-assign": 2,
-    "class-methods-use-this": 0,
+    "new-parens": 2,  // new时必须加小括号
+    "no-array-constructor": 2,  // 禁止使用数组构造器
+    "no-class-assign": 2, // 禁止给类赋值
+    "no-cond-assign": 2,  // 禁止在条件表达式中使用赋值语句
+    "class-methods-use-this": 0, // 类方法必须使用this
     "react/jsx-no-bind": 0, // 允许使用bind this.func.bind(this)
     "no-restricted-syntax": 0, // forin遍历原型链
     "no-prototype-builtins": 0, // 原型链方法 例如： hasOwnProperty
