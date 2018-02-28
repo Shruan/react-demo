@@ -35,22 +35,22 @@ module.exports = {
     "space-before-function-paren": ["error", "always"], // 方法参数的括号前加空格
     "semi": ["error", "never"], // 结尾不使用分号
     "comma-dangle": ["error", "never"], // 要求或禁止末尾逗号：不允许逗号
+    "comma-spacing": [2, {"before": false, "after": true}],
     // "linebreak-style": ["error", "windows"], // window环境
+    "linebreak-style": ["error", "unix"],
     "react/forbid-prop-types": [0], // propTypes检查允许使用object array等
     "arrow-parens": [0],
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/click-events-have-key-events": 0,
-    "linebreak-style": ["error", "unix"],
     "no-empty": 0,
     "no-unused-vars": 0,
-    "no-console": 0,
+    "no-console": 0,  // 无console
     "no-const-assign": 2,
     "no-dupe-class-members": 2,
     "no-duplicate-case": 2,
     "no-extra-parens": [2, "functions"],
     "no-self-compare": 2,
     "accessor-pairs": 2,
-    "comma-spacing": [2, {"before": false, "after": true}],
     "constructor-super": 2,
     "new-cap": [2, {"newIsCap": true, "capIsNew": false}],
     "new-parens": 2,
@@ -58,6 +58,9 @@ module.exports = {
     "no-class-assign": 2,
     "no-cond-assign": 2,
     "class-methods-use-this": 0,
-    "react/jsx-no-bind": 0
+    "react/jsx-no-bind": 0, // 允许使用bind this.func.bind(this)
+    "no-restricted-syntax": 0, // forin遍历原型链
+    "no-prototype-builtins": 0, // 原型链方法 例如： hasOwnProperty
+    "no-param-reassign": 0, //禁止给参数重新赋值
   }
 }
