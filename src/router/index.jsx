@@ -8,6 +8,7 @@ import Hello from '../pages/Hello'
 import List from '../pages/List'
 import Detail from '../pages/Detail'
 import Todo from '../pages/Todo'
+import StoreTest from '../pages/StoreTest'
 
 
 class router extends Component {
@@ -21,6 +22,7 @@ class router extends Component {
           <Route path='detail/:id' component={Detail}></Route>
           <Route path='hello' component={Hello}></Route>
           <Route path='todo' component={Todo}></Route>
+          <Route path='storeTest' component={StoreTest}></Route>
         </Route>
       </Router>
     )

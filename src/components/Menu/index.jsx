@@ -20,6 +20,11 @@ class Menu extends Component {
           id: 3,
           name: '父子组件交互',
           url: '/todo'
+        },
+        {
+          id: 4,
+          name: 'redux使用',
+          url: '/storeTest'
         }
       ]
     }
