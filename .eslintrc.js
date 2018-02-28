@@ -62,5 +62,6 @@ module.exports = {
     "no-restricted-syntax": 0, // forin遍历原型链
     "no-prototype-builtins": 0, // 原型链方法 例如： hasOwnProperty
     "no-param-reassign": 0, //禁止给参数重新赋值
+    "guard-for-in": 0, // forin 不用if语句过滤
   }
 }
