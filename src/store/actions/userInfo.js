@@ -1,4 +1,4 @@
-export function loginFunc (data) {
+export function login (data) {
   return {
     type: 'USERINFO_LOGIN',
     data
