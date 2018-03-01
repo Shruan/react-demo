@@ -64,5 +64,6 @@ module.exports = {
     "no-param-reassign": 0, //禁止给参数重新赋值
     "guard-for-in": 0, // forin 不用if语句过滤
     "jsx-quotes": 0, // JSX 属性值总是使用双引号("), 其他均使用单引号(')
+    "import/prefer-default-export": 0,
   }
 }
