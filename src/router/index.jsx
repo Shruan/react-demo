@@ -10,19 +10,25 @@ import Detail from '../pages/Detail'
 import Todo from '../pages/Todo'
 import StoreTest from '../pages/StoreTest'
 
-
 class router extends Component {
+  constructor (props) {
+    super(props)
+    this.updateHandle = this.updateHandle.bind(this)
+  }
+  updateHandle () {
+    console.log(Router)
+  }
   render () {
     return (
-      <Router history={hashHistory}>
+      <Router history={hashHistory} onUpdate={this.updateHandle}>
         <Route path='/' component={App}>
           <Route path='home' component={Home}>
-            <Route path='list' component={List}></Route>
+            <Route path='list' component={List} />
           </Route>
-          <Route path='detail/:id' component={Detail}></Route>
-          <Route path='hello' component={Hello}></Route>
-          <Route path='todo' component={Todo}></Route>
-          <Route path='storeTest' component={StoreTest}></Route>
+          <Route path='detail/:id' component={Detail} />
+          <Route path='hello' component={Hello} />
+          <Route path='todo' component={Todo} />
+          <Route path='storeTest' component={StoreTest} />
         </Route>
       </Router>
     )
