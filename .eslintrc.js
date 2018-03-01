@@ -63,5 +63,6 @@ module.exports = {
     "no-prototype-builtins": 0, // 原型链方法 例如： hasOwnProperty
     "no-param-reassign": 0, //禁止给参数重新赋值
     "guard-for-in": 0, // forin 不用if语句过滤
+    "jsx-quotes": 0, // JSX 属性值总是使用双引号("), 其他均使用单引号(')
   }
 }
