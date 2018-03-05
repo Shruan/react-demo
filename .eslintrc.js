@@ -65,5 +65,6 @@ module.exports = {
     "guard-for-in": 0, // forin 不用if语句过滤
     "jsx-quotes": 0, // JSX 属性值总是使用双引号("), 其他均使用单引号(')
     "import/prefer-default-export": 0,
+    "react/no-did-mount-set-state": 0, // 禁止在mount时使用setState
   }
 }
