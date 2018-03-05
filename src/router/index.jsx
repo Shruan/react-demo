@@ -16,7 +16,6 @@ class router extends Component {
     this.updateHandle = this.updateHandle.bind(this)
   }
   updateHandle () {
-    console.log(Router)
   }
   render () {
     return (
