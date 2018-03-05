@@ -5,7 +5,7 @@ export function get (url) {
   const result = fetch(url, {
     credentials: 'include',
     headers: {
-      'Accept': 'application/json, text/plain, */*'
+      Accept: 'application/json, text/plain, */*'
     }
   })
   return result

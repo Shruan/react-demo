@@ -21,7 +21,7 @@ export function post (url, paramsObj) {
     method: 'POST',
     credentials: 'include',
     headers: {
-      'Accept': 'application/json, text/plain, */*',
+      Accept: 'application/json, text/plain, */*',
       'Content-Type': 'application/x-www-form-urlencoded'
     },
     body: obj2params(paramsObj)
