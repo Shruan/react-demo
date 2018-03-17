@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as userInfoActions from '../../store/actions/userInfo'
 
+import { get } from '../../fetch/get'
+
 class StoreTest extends Component {
   constructor (props) {
     super(props)
@@ -15,6 +17,11 @@ class StoreTest extends Component {
     }
     this.submit = this.submit.bind(this)
     this.change = this.change.bind(this)
+  }
+  componentDidMount () {
+    get('/hello/qiu').then(res => {
+      console.log(res)
+    })
   }
   inputOnchange (label, e) {
     if (label === 'name') {
