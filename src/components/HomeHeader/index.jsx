@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { render } from 'react-dom'
+import PropTypes from 'prop-types'
 import logo from './logo.svg'
 import './style.less'
 
@@ -7,18 +7,27 @@ class HomeHeader extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      title: 'Welcome to React'
     }
   }
   render () {
     return (
       <header className="sy__flex">
-        <div>厦门</div>
-        <div><input /></div>
-        <div>{this.state.title}</div>
+        <div>
+          {this.props.city}
+          <i className="icon-angle-down" />
+        </div>
+        <div>
+          <i className="icon-search" />
+          <input />
+        </div>
+        <div><i className="icon-user" /></div>
       </header>
     )
   }
+}
+
+HomeHeader.propTypes = {
+  city: PropTypes.string.isRequired
 }
 
 export default HomeHeader
